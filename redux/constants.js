@@ -1,0 +1,35 @@
+export const actions = {
+    LOGIN_USER: "LOGIN_USER",
+    CREATE_USER: "CREATE_USER",
+    SEARCH_SUBORDINATES: "SEARCH_SUBORDINATES",
+    SEARCH_CIVILIANS: "SEARCH_CIVILIANS",
+    UPDATE_WORK_SESSION: "UPDATE_WORK_SESSION",
+    SEARCH_GOV_OFFICIALS: "SEARCH_GOV_OFFICIALS",
+    INFORM_CIVILIAN: "INFORM_CIVILIAN",
+    REINFORM_CIVILIAN: "REINFORM_CIVILIAN",
+    DELETE_CIVILIAN: "DELETE_CIVILIAN",
+    GET_CIVILIAN_BY_ID: "GET_CIVILIAN_BY_ID",
+    LOCK_ACCOUNT: "LOCK_ACCOUNT",
+    UNLOCK_ACCOUNT: "UNLOCK_ACCOUNT",
+    GET_PROVINCE: "GET_PROVINCE",
+    GET_WARD: "GET_WARD",
+    GET_DISTRICT: "GET_DISTRICT",
+    GET_RESIDENTIAL: "GET_RESIDENTIAL",
+    ADD_PROVINCE: "ADD_PROVINCE",
+    ADD_DISTRICT: "ADD_DISTRICT",
+    ADD_WARD: "ADD_WARD",
+    ADD_RESIDENTIAL: "ADD_RESIDENTIAL",
+}
+
+export function _onSuccess(action) {
+    return action + "_SUCCESS";
+}
+export function _onFail(action) {
+    return action + "_FAIL";
+}
+export function _onUnmount(action) {
+    return action + "_UNMOUNT";
+}
+export function _onProcessing(action) {
+    return action + "_PROCESSING";
+}
